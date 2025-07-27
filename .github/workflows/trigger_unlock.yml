@@ -1,0 +1,11 @@
+name: Trigger Unlock
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🟢 GitHub Actions UI should now be unlocked!"
