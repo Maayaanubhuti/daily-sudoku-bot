@@ -1,9 +1,9 @@
 name: Daily Sudoku Screenshot
 
 on:
+  workflow_dispatch:   # ✅ Manual trigger
   schedule:
-    - cron: '30 3 * * *'  # 3:30 AM UTC = 9:00 AM IST
-  workflow_dispatch:
+    - cron: '30 3 * * *'  # ✅ Automatic run at 9 AM IST
 
 jobs:
   run-sudoku:
